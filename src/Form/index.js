@@ -79,7 +79,7 @@ const Form = () => {
             console.log("Por favor llenar bien el formulario");
         }
 
-        if (step >= 2) {
+        if (step >= 2 && stepValidations[step]()) {
             // Limpiar localStorage al completar el formulario
             confetti();
             console.log("local storage borrado");
@@ -177,7 +177,10 @@ const Form = () => {
     return (
         <Box
             sx={{
-                padding: "30px",
+                padding: {
+                    xs: "32px 16px",
+                    lg: "40px",
+                },
                 display: "flexbox",
                 flexDirection: "column",
             }}

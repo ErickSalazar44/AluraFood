@@ -5,7 +5,7 @@ const StepperComponent = ({ step }) => {
     const steps = ["Datos de usuario", "Datos personales", "Datos de entrega"];
 
     return (
-        <Box sx={{ width: "100%" }}>
+        <Box sx={{ width: "100%", marginBottom: "2em" }}>
             <Stepper activeStep={step}>
                 {steps.map((step) => (
                     <Step key={step}>

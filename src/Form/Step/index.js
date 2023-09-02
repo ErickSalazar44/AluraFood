@@ -32,7 +32,11 @@ const MostrarInputs = ({ data, onSubmit }) => {
                     />
                 );
             })}
-            <Button variant='contained' type='submit'>
+            <Button
+                sx={{ marginTop: "2em", marginLeft: "auto" }}
+                variant='contained'
+                type='submit'
+            >
                 {"Siguiente"}
             </Button>
         </Box>

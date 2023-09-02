@@ -1,5 +1,5 @@
 export const validarDireccion = (direccion) => {
-    return direccion.length > 4 ? true : false;
+    return direccion.length >= 3 ? true : false;
 };
 
 export const validarCiudad = (ciudad) => {
